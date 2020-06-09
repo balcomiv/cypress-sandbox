@@ -2,6 +2,8 @@
   "name": "cypress-sandbox",
   "version": "0.0.0",
   "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -19,6 +21,7 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
+    "@briebug/cypress-schematic": "^3.3.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -27,10 +30,12 @@
     "@angular-devkit/build-angular": "~0.901.6",
     "@angular/cli": "~9.1.6",
     "@angular/compiler-cli": "~9.1.7",
+    "@cypress/webpack-preprocessor": "5.4.1",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.1.2",
+    "cypress": "4.8.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -38,7 +43,7 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
-    "protractor": "~5.4.3",
+    "ts-loader": "7.0.5",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"

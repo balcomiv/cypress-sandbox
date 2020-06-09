@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Helpful Links
+
+https://github.com/briebug/cypress-schematic
+
+https://dev.to/angular/ci-ready-e2e-tests-for-angular-with-cypress-and-typescript-in-under-60-minutes-4f30
+
+## Cypress Links
+
+https://docs.cypress.io/api/commands/route.html#With-Stubbing
+
+https://docs.cypress.io/api/commands/request.html#Syntax

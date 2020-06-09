@@ -111,10 +111,35 @@
           }
         },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@briebug/cypress-schematic:cypress",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "cypress-sandbox:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "cypress-sandbox:serve:production"
+            }
+          }
+        },
+        "cypress-run": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
             "devServerTarget": "cypress-sandbox:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "cypress-sandbox:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "cypress-sandbox:serve",
+            "watch": true,
+            "headless": false
           },
           "configurations": {
             "production": {
@@ -123,6 +148,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "cypress-sandbox"
 }
